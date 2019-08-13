@@ -6,6 +6,9 @@
 ## 简化后代码如下
 ```javascript
 <script>
+
+  let isUsingMicroTask = false
+
   const callbacks = []
   let pending = false
 

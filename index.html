@@ -7,6 +7,9 @@
 <body>
 <h1>分析Vue之nextTick原理</h1>
 <script>
+
+  let isUsingMicroTask = false
+
   const callbacks = []
   let pending = false
 
