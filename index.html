@@ -1,10 +1,11 @@
-# nextTick
-分析Vue之nextTick原理
-
-## next-tick.js是Vue的源码
-
-## 简化后代码如下
-```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>分析Vue之nextTick原理</title>
+</head>
+<body>
+<h1>分析Vue之nextTick原理</h1>
 <script>
   const callbacks = []
   let pending = false
@@ -20,7 +21,6 @@
   }
 
   let timerFunc
-  // 能力检测
   if (typeof Promise !== 'undefined') {
     const p = Promise.resolve()
     timerFunc = () => {
@@ -106,7 +106,5 @@
   })
 
 </script>
-```
-
-## 执行结果
-![结果](nextTick.png)
+</body>
+</html>
